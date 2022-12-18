@@ -1,10 +1,18 @@
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import MyBar from './MyBar';
 import MyCard from './MyCard';
 
-var data = require('./attractions.json')
-
 function App() {
+  const [data, setData] = useState([])
+  useEffect(() =>{
+    fetch("https://www.mecallapi.com/api/attractions")
+      .then(res => res.json())
+      .then((result) => {
+        console.log(result);
+        setData(result);
+      })
+  }, [])
   return (
     <>
       <MyBar />
