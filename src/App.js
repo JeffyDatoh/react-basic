@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <MyBar />
+      <h1 style={{paddingLeft: "10px"}}>Attraction</h1>
       <div className="grid-container">
+        <MyCard />
+        <MyCard />
         <MyCard />
         <MyCard />
         <MyCard />
