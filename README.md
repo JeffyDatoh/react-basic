@@ -2,5 +2,3 @@
 
 Learn how to write react, css, html in vscode
 
-## Available Scripts
-
