@@ -2,6 +2,8 @@ import './App.css';
 import MyBar from './MyBar';
 import MyCard from './MyCard';
 
+var data = require('./attractions.json')
+
 function App() {
   return (
     <>
